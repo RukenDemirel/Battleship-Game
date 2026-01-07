@@ -1,0 +1,200 @@
+body{
+	background:#003b61;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+h1{
+	color: #d0e1f0;
+	font-size: 50px;
+	font-family: "Russo One", sans-serif;
+}
+#gameboards-container {
+	margin: 0;
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+p{
+	color: #d0e1f0;
+	font-size: 15px;
+	font-family: "Russo One", sans-serif;
+}
+.game-board {
+	width: 420px;
+	height: 420px;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: repeat(10, 10%);
+	/* justify-content: center; */
+	border: none
+}
+
+
+.block {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	border: 3px solid #003b61;
+	background-color: #318db2;
+}
+.block:hover {
+	background-color: 	#046997;
+}
+
+
+
+.option-container {
+	width: 600px;
+	height: 120px;
+	margin: 60px 0;
+	background-color: 	#046997;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 15px; 
+}
+
+
+/* THE SHIPS */
+
+.destroyer {
+	background-color: #FFD700;
+	
+}
+.destroyer-preview {
+	width: 40px;
+	height: 20px;
+	border-radius: 10px 0 0 10px;
+}
+
+.submarine {
+	background-color: #FF6347;
+}
+.submarine-preview {
+	width: 60px;
+	height: 20px;
+	border-radius: 10px 0 0 10px;
+}
+
+.cruiser {
+	background-color: #8A2BE2;
+}
+.cruiser-preview {
+	width: 60px;
+	height: 20px;
+	border-radius: 10px 0 0 10px;
+}
+
+.battleship {
+	background-color: #00CED1;
+}
+.battleship-preview {
+	width: 80px;
+	height: 20px;
+	border-radius: 10px 0 0 10px;
+}
+
+.carrier {
+	background-color: #FF8C00;
+}
+.carrier-preview {
+	width: 100px;
+	height: 20px;
+	border-radius: 10px 0 0 10px;
+}
+
+/* HOVER */
+.hover {
+	background-color: grey;
+}
+
+#bot .destroyer,
+#bot .submarine,
+#bot .cruiser,
+#bot .battleship,
+#bot .carrier {
+	background-color: 	#318db2;
+}
+
+.boom {
+	background-color: red !important;
+}
+
+.empty {
+	background-color: grey !important;
+}
+
+/* BUTTONS */
+#flip-button {
+    margin-top: 20px;
+    padding: 12px 26px;
+    cursor: pointer;
+
+    background-color: #29a4c3; 
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 0 #1b6f82; /* darker shade for 3D effect */
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+#flip-button:hover {
+    background-color: #45c3e0; /* lighter hover color */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #1b6f82;
+}
+
+#flip-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1b6f82;
+}
+
+#start-button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    cursor: pointer;
+    
+    background-color: #29a4c3; 
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 8px; /* smooth corners */
+    
+    box-shadow: 0 4px 0 #1b6f82; /* darker bottom for 3D effect */
+    transition: 
+        background-color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+#start-button:hover {
+    background-color: #45c3e0; /* your lighter hover blue */
+    transform: translateY(-2px); /* rises a bit */
+    box-shadow: 0 6px 0 #1b6f82;
+}
+
+#start-button:active {
+    transform: translateY(2px); /* pressed down */
+    box-shadow: 0 2px 0 #1b6f82;
+}
+
